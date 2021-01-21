@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 rounded-md text-white transition duration-150 ease-in-out font-semibold;
+}
+
+.categorias__card {
+  @apply rounded-md;
+}
+
+.product-page__icons {
+  @apply text-white w-5;
+}
+
+.product-page__icons-background {
+  @apply bg-green-400 rounded-full inline-flex items-center p-2;
+}
+
+.product-page__specification {
+  @apply text-lg ml-2 leading-none;
+}
+
+.check input:invalid {
+  border-color: red;
+}
+
+.label-floating input:not(:placeholder-shown),
+.label-floating textarea:not(:placeholder-shown) {
+  padding-top: 1.4rem;
+}
+
+.label-floating input:not(:placeholder-shown) ~ label,
+.label-floating textarea:not(:placeholder-shown) ~ label {
+  font-size: 0.8rem;
+  transition: all 0.2s ease-in-out;
+  color: #1f9d55;
+  opacity: 1;
+}
+
+@tailwind utilities;
